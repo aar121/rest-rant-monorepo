@@ -1,24 +1,20 @@
 # Project REST-Rant
 REST-Rant is an app where users can review restaurants.
 
-### Setup
-First, you'll need a Postgres database to connect to. Follow instructions here to setup the database and save credentials for the next step.
+## Description and Demo
+This application allows users to create new restaurant listings that they like, view restaurants, and leave reviews and comments on the restaurant. Although a demo of this project is currently not available, the full code with a commit history and all dependencies can be found at https://github.com/aar121/rest-rant-monorepo. 
 
-Next create a `.env` file inside of `backend`. It will need to contain the following environment variables (change the values for the database to match what you defined in the previous step)
-```
-PORT=5000
-DB_USERNAME=rest_rant_user
-DB_PASSWORD=password
-DB_DATABASE=rest_rant
-```
+### Technologies 
+This application was created using JavaScript, HTML and JSX for the front end and JavaScript and nodeJS for the backend. The database used is Postgres. 
 
-Next `cd` into `backend` and run `npm install` to install dependencies for the API.
+#### Technical Information
+Run npm i to install any node packages on your local machine. Then run npm start separately in 2 different terminals, the backend and the frontend. To add to this project, simply fork the project to your GitHub account and add any code on your local machine. Upload your changes to your GitHub account and request to merge with the original directory. 
 
-Next, `cd` into `frontend`, and run `npm install` to install dependencies for the React app.
+##### Issues
+Although this project is fully functional, in the future we would like to incorporate more styling options that would allow for a different look for the website. We would also like to add the ability to filter based on specific location.
 
-Finally, in separate terminals, run `npm start` in each folder so that the API and React app are running at the same time.
 
-### API (http://localhost:5000)
+###### API (http://localhost:5000)
 | Method | Path                                 | Purpose                                   |
 | ------ | ------------------------------------ | ----------------------------------------- |
 | GET    | /                                    | Home page                                 |
@@ -31,7 +27,7 @@ Finally, in separate terminals, run `npm start` in each folder so that the API a
 | DELETE | /places/:placeId/comments/:commentId | Delete a comment about a particular place |
 
 
-### App (http://localhost:3000)
+###### App (http://localhost:3000)
 | Path                  | Component                 | Purpose                                                                         |
 | --------------------- | ------------------------- | ------------------------------------------------------------------------------- |
 | /                     | `Home.js`                 | Home page                                                                       |
